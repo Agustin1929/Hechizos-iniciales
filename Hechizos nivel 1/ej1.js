@@ -10,8 +10,16 @@ const leer = require("prompt-sync")();
 
 
 function main() {
-    
+    let total = 0
+    let raices_mandragora = 0
+    let cant_escarabajos = 0
+    console.log("cual es la cantidad de raices mandragora que se nesecitan para la pocion")
+    raices_mandragora = Number(leer())
+    console.log("¿y la cantidad de escarabajos cual es?")
+    cant_escarabajos =  Number (leer())
+   total = raices_mandragora+cant_escarabajos 
+    console.log ("la cantdad de ingredientes es:")
+    console.log(total);
+
 }
-
-
 main();
