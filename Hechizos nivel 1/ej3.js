@@ -10,6 +10,21 @@ const leer = require("prompt-sync")();
 
 
 function main() {
+    let cant_plumasDefenix=0
+    let peso_nimbus=0
+    let total=0
+    console.log("cual es la cantidad de plumas de fenix");
+    cant_plumasDefenix = Number (leer())
+    console.log("cual es el peso de la nimbus");
+    peso_nimbus = Number (leer())
+    total=peso_nimbus*0.1
+    console.log("la cantidad es:",cant_plumasDefenix+total)
+
+
+
+
+
+
     
 }
 
