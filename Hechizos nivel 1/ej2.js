@@ -12,6 +12,24 @@ const leer = require("prompt-sync")();
 
 
 function main() {
+    let estudiantesPresentes = 0 
+    let librosAusar = 0
+    let total = 0 
+    let total_1 = 0
+    console.log("cuantos estudiantes presentes trajeron su varita hoy?");
+    estudiantesPresentes = Number (leer())
+    console.log("cual es la cantidad de libros a usar?");
+    librosAusar = Number (leer())
+    total=estudiantesPresentes *3
+    total_1 = librosAusar *2
+    console.log("la cantidad es",total+total_1)
+    
+    
+    
+
+
+
+
     
 }
 
