@@ -12,8 +12,31 @@ const leer = require("prompt-sync")();
 
 
 function main() {
-    
+    let nucleoDevarita
+    console.log("cual es el nucleo de tu varita magica?");
+    nucleoDevarita = leer()
+
+    if (nucleoDevarita == "fenix") {
+
+        console.log("bien,¡Excelente elección! las varitas que cuentan con el nucleo fenix son poderosas y leales");
+
+    }
+    else if (nucleoDevarita == "unicornio") {
+
+        console.log("bien,las varitas con nucleo de unicornio son conocidas por su pureza y fuerza");
+
+    }
+    else if (nucleoDevarita == "dragon") {
+
+        console.log("¡Cuidado! Las varitas con núcleo de dragón son poderosas pero pueden ser temperamentales.")
+    }
+
+    else console.log("no reconocemos ese nucleo. por favor, ingrese un nucleo valido");
+
+
 }
+
+
 
 
 main();
