@@ -15,7 +15,26 @@ const leer = require("prompt-sync")();
 
 
 function main() {
-    
+    let nombreDepocion
+    console.log("cual es el nombre de tu pocion?");
+    nombreDepocion = leer()
+
+    if (nombreDepocion == "felix felicis") {
+
+        console.log("tu pocion es extremadamente compleja y peligrosa");
+
+    }
+
+    else if (nombreDepocion == "polvo de flu") {
+
+        console.log("tu pocion es compleja pero util en la red de transportacion");
+    }
+    else if (nombreDepocion == "pocion multijugos") {
+
+        console.log("es una pocion complicada pero muy util para transforamaciones temporales");
+    }
+
+    else console.log("no tenemos informacion sobre esa pocion en nuestros registros")
 }
 
 
