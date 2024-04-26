@@ -19,10 +19,43 @@ Wingardium Leviosa
 Expelliarmus
 Avada Kedavra
  */
-
+const NUMERO_DEFINIDO_POR_USUARIO = 0
+const CODIGO_SECRETO_1 = 2004
+const CODIGO_SECRETO_2 = 1234
+const CODIGO_SECRETO_3 = 5678
+const CODIGO_SECRETO_4 = 2024
 
 function main() {
+
+    let codigoArecibir
+    console.log("cual es el codigo que queres ingresar?:");
+    codigoArecibir = leer()
+
+    if (codigoArecibir == CODIGO_SECRETO_1) {
+
+        console.log("ingresaste el codigo del echizo \t expecto patronum");
+    }
+
+    else if (codigoArecibir == CODIGO_SECRETO_2) {
+
+        console.log("ingresaste el codigo del echizo \t Wingardium Leviosa");
+
+    }
+
+    else if (codigoArecibir == CODIGO_SECRETO_3) {
+
+        console.log("ingresaste el codigo del hechizo \t Expelliarmus");
+        
+    }
     
+    else if (codigoArecibir == CODIGO_SECRETO_4) {
+
+        console.log("ingresaste el codigo del hechizo \t Avada Kedavra");
+        
+    }
+
+     else console.log("tu codigo ingresado es incorrecto")
+
 }
 
 
