@@ -25,7 +25,7 @@ function main() {
     
     while (vidaDemen >0 && vidaMaxestudiante >0   ) {
         console.log("\n la vida actual del dementor es de",vidaDemen,"\n");
-        console.log("\nel dementor te ataco, tu vida es de",vidaMaxestudiante,"\n");
+        console.log("\n  tu vida es de",vidaMaxestudiante,"\n");
     console.log("cual es el nombre del echizo que deseas lanzar:");
     echizoIngresado = leer()
         if (echizoIngresado == echizo ) {
