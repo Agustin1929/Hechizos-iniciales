@@ -10,11 +10,41 @@ const leer = require("prompt-sync")();
  * Daño por hechizo acertado del estudiante contra dementor: 267
  * Turnos totales: 5 
  */
-
-
+const VIDA_MAX_DEMENTOR = 1000
+const VIDA_ESTUDIANTE = 350 
+const DAÑO_PERDIDO_TURNO = 75
+const DAÑO_ACERTADO = 267
+const NOMBRE_HECHIZO = "patronus"
 function main() {
+    let vidaDemen = VIDA_MAX_DEMENTOR
+    let vidaMaxestudiante = VIDA_ESTUDIANTE
+    let dañoPerdido = DAÑO_PERDIDO_TURNO
+    let dañoEchizo = DAÑO_ACERTADO
+    let echizo = NOMBRE_HECHIZO
+    let echizoIngresado 
     
+    while (vidaDemen >0 && vidaMaxestudiante >0   ) {
+        console.log("\n la vida actual del dementor es de",vidaDemen,"\n");
+        console.log("\nel dementor te ataco, tu vida es de",vidaMaxestudiante,"\n");
+    console.log("cual es el nombre del echizo que deseas lanzar:");
+    echizoIngresado = leer()
+        if (echizoIngresado == echizo ) {
+            console.log("\n lanzaste el echizo patronus\n");
+            console.log("\n le hiciste al dementor un daño de",dañoEchizo,"\n");
+            vidaDemen = vidaDemen-dañoEchizo
+        }
+        else if (echizoIngresado != echizo ) {
+            console.log("\nechizo incorrecto\n");
+            vidaMaxestudiante = vidaMaxestudiante - dañoPerdido
+        }
+    }
+        if  (vidaDemen<=0) {
+          console.log("victoria");
+        }
+        else{ 
+              console.log("derrota");
+        }
 }
-
+    
 
 main();
